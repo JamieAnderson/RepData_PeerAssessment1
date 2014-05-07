@@ -108,7 +108,7 @@ sum(is.na(Activity$steps))
 
 
 That's a lot of missing data! Let's impute the missing data with the mean of
-there respective intervals.  This will take two steps:<br/>
+their respective intervals.  This will take two steps:<br/>
 1. Add a column of interval means to **Activity** using the *join* function and the **IntervalSteps** dataframe we already created. <br/>
 2. Impute these interval means for rows that have NA steps<br/>
 
@@ -176,9 +176,6 @@ That seems to have done the trick.
 
 Next we will create a new dataframe that calculates the mean number of steps 
 taken split by both time interval and weekday/weekend.
-
-Once we have this, we can graph the timeseries step data for both
-weekends and weekdays and compare to see if any major disparities exist.
 
 
 ```r
